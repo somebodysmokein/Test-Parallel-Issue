@@ -1,0 +1,95 @@
+01:59:17.594 [ApplicationImpl pooled thread 766] INFO  c.b.l.BrowserStackRunExtension - maven
+01:59:17.594 [ApplicationImpl pooled thread 766] INFO  com.browserstack.utils.Helpers - null
+02:00:18.476 [ApplicationImpl pooled thread 766] INFO  c.b.l.BrowserStackRunExtension - maven
+02:00:18.476 [ApplicationImpl pooled thread 766] INFO  com.browserstack.utils.Helpers - null
+23:37:21.924 [ApplicationImpl pooled thread 113] INFO  c.b.l.BrowserStackRunExtension - maven
+23:37:21.924 [ApplicationImpl pooled thread 113] INFO  com.browserstack.utils.Helpers - null
+00:57:15.595 [ApplicationImpl pooled thread 353] INFO  c.b.l.BrowserStackRunExtension - maven
+00:57:15.595 [ApplicationImpl pooled thread 353] INFO  com.browserstack.utils.Helpers - null
+01:00:46.880 [ApplicationImpl pooled thread 379] INFO  c.b.l.BrowserStackRunExtension - maven
+01:00:46.881 [ApplicationImpl pooled thread 379] INFO  com.browserstack.utils.Helpers - null
+01:01:13.527 [ApplicationImpl pooled thread 344] INFO  c.b.l.BrowserStackRunExtension - maven
+01:01:13.528 [ApplicationImpl pooled thread 344] INFO  com.browserstack.utils.Helpers - null
+01:02:55.397 [ApplicationImpl pooled thread 380] INFO  c.b.l.BrowserStackRunExtension - maven
+01:02:55.398 [ApplicationImpl pooled thread 380] INFO  com.browserstack.utils.Helpers - null
+01:09:29.464 [ApplicationImpl pooled thread 385] INFO  c.b.l.BrowserStackRunExtension - maven
+01:09:29.465 [ApplicationImpl pooled thread 385] INFO  com.browserstack.utils.Helpers - null
+01:09:57.043 [ApplicationImpl pooled thread 379] INFO  c.b.l.BrowserStackRunExtension - maven
+01:09:57.044 [ApplicationImpl pooled thread 379] INFO  com.browserstack.utils.Helpers - null
+01:10:16.572 [ApplicationImpl pooled thread 384] INFO  c.b.l.BrowserStackRunExtension - maven
+01:10:16.572 [ApplicationImpl pooled thread 384] INFO  com.browserstack.utils.Helpers - null
+01:16:07.645 [ApplicationImpl pooled thread 396] INFO  c.b.l.BrowserStackRunExtension - maven
+01:16:07.646 [ApplicationImpl pooled thread 396] INFO  com.browserstack.utils.Helpers - null
+01:19:00.728 [ApplicationImpl pooled thread 429] INFO  c.b.l.BrowserStackRunExtension - maven
+01:19:00.729 [ApplicationImpl pooled thread 429] INFO  com.browserstack.utils.Helpers - null
+01:31:56.830 [ApplicationImpl pooled thread 442] INFO  c.b.l.BrowserStackRunExtension - maven
+01:31:56.831 [ApplicationImpl pooled thread 442] INFO  com.browserstack.utils.Helpers - null
+12:47:28.715 [ApplicationImpl pooled thread 713] INFO  c.b.l.BrowserStackRunExtension - maven
+12:47:28.716 [ApplicationImpl pooled thread 713] INFO  com.browserstack.utils.Helpers - null
+13:14:34.004 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+13:14:34.008 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+13:15:07.331 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Integrate source: cucumber-junit4:intellij:v1.1.2
+13:15:07.333 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+13:15:07.441 [ApplicationImpl pooled thread 783] INFO  c.b.l.BrowserStackRunExtension - maven
+13:15:07.441 [ApplicationImpl pooled thread 783] INFO  com.browserstack.utils.Helpers - null
+13:15:17.125 [java] INFO  c.b.launchers.LaunchMavenCommand - Completed maven archetype command
+13:19:39.840 [ApplicationImpl pooled thread 800] INFO  c.b.l.BrowserStackRunExtension - maven
+13:19:39.840 [ApplicationImpl pooled thread 800] INFO  com.browserstack.utils.Helpers - true
+13:21:22.387 [ApplicationImpl pooled thread 788] INFO  c.b.l.BrowserStackRunExtension - maven
+13:21:22.388 [ApplicationImpl pooled thread 788] INFO  com.browserstack.utils.Helpers - true
+13:24:20.846 [ApplicationImpl pooled thread 836] INFO  c.b.l.BrowserStackRunExtension - maven
+13:24:20.847 [ApplicationImpl pooled thread 836] INFO  com.browserstack.utils.Helpers - true
+13:25:44.311 [ApplicationImpl pooled thread 807] INFO  c.b.l.BrowserStackRunExtension - maven
+13:25:44.311 [ApplicationImpl pooled thread 807] INFO  com.browserstack.utils.Helpers - true
+13:28:21.159 [ApplicationImpl pooled thread 868] INFO  c.b.l.BrowserStackRunExtension - maven
+13:28:21.160 [ApplicationImpl pooled thread 868] INFO  com.browserstack.utils.Helpers - true
+13:57:32.163 [ApplicationImpl pooled thread 904] INFO  c.b.l.BrowserStackRunExtension - maven
+13:57:32.164 [ApplicationImpl pooled thread 904] INFO  com.browserstack.utils.Helpers - true
+14:02:54.650 [ApplicationImpl pooled thread 968] INFO  c.b.l.BrowserStackRunExtension - maven
+14:02:54.651 [ApplicationImpl pooled thread 968] INFO  com.browserstack.utils.Helpers - true
+14:08:58.850 [ApplicationImpl pooled thread 1013] INFO  c.b.l.BrowserStackRunExtension - maven
+14:08:58.850 [ApplicationImpl pooled thread 1013] INFO  com.browserstack.utils.Helpers - true
+14:12:03.139 [ApplicationImpl pooled thread 1078] INFO  c.b.l.BrowserStackRunExtension - maven
+14:12:03.140 [ApplicationImpl pooled thread 1078] INFO  com.browserstack.utils.Helpers - true
+14:17:40.333 [ApplicationImpl pooled thread 1127] INFO  c.b.l.BrowserStackRunExtension - maven
+14:17:40.333 [ApplicationImpl pooled thread 1127] INFO  com.browserstack.utils.Helpers - true
+14:20:19.132 [ApplicationImpl pooled thread 1151] INFO  c.b.l.BrowserStackRunExtension - maven
+14:20:19.132 [ApplicationImpl pooled thread 1151] INFO  com.browserstack.utils.Helpers - true
+14:23:25.874 [ApplicationImpl pooled thread 1171] INFO  c.b.l.BrowserStackRunExtension - maven
+14:23:25.875 [ApplicationImpl pooled thread 1171] INFO  com.browserstack.utils.Helpers - true
+14:24:14.869 [ApplicationImpl pooled thread 1225] INFO  c.b.l.BrowserStackRunExtension - maven
+14:24:14.870 [ApplicationImpl pooled thread 1225] INFO  com.browserstack.utils.Helpers - true
+14:34:50.427 [ApplicationImpl pooled thread 1264] INFO  c.b.l.BrowserStackRunExtension - maven
+14:34:50.427 [ApplicationImpl pooled thread 1264] INFO  com.browserstack.utils.Helpers - true
+23:25:21.931 [ApplicationImpl pooled thread 3195] INFO  c.b.l.BrowserStackRunExtension - maven
+23:25:21.931 [ApplicationImpl pooled thread 3195] INFO  com.browserstack.utils.Helpers - true
+23:36:06.158 [ApplicationImpl pooled thread 3244] INFO  c.b.l.BrowserStackRunExtension - maven
+23:36:06.173 [ApplicationImpl pooled thread 3244] INFO  com.browserstack.utils.Helpers - true
+23:39:45.841 [ApplicationImpl pooled thread 3240] INFO  c.b.l.BrowserStackRunExtension - maven
+23:39:45.842 [ApplicationImpl pooled thread 3240] INFO  com.browserstack.utils.Helpers - true
+16:09:36.141 [ApplicationImpl pooled thread 3966] INFO  c.b.l.BrowserStackRunExtension - maven
+16:09:36.142 [ApplicationImpl pooled thread 3966] INFO  com.browserstack.utils.Helpers - true
+20:58:29.688 [ApplicationImpl pooled thread 5716] INFO  c.b.l.BrowserStackRunExtension - maven
+20:58:29.691 [ApplicationImpl pooled thread 5716] INFO  com.browserstack.utils.Helpers - true
+21:47:58.566 [ApplicationImpl pooled thread 5790] INFO  c.b.l.BrowserStackRunExtension - maven
+21:47:58.567 [ApplicationImpl pooled thread 5790] INFO  com.browserstack.utils.Helpers - true
+21:56:47.577 [ApplicationImpl pooled thread 5825] INFO  c.b.l.BrowserStackRunExtension - maven
+21:56:47.578 [ApplicationImpl pooled thread 5825] INFO  com.browserstack.utils.Helpers - true
+22:22:58.276 [ApplicationImpl pooled thread 5860] INFO  c.b.l.BrowserStackRunExtension - maven
+22:22:58.277 [ApplicationImpl pooled thread 5860] INFO  com.browserstack.utils.Helpers - true
+21:18:20.490 [ApplicationImpl pooled thread 1406] INFO  c.b.l.BrowserStackRunExtension - maven
+21:18:20.490 [ApplicationImpl pooled thread 1406] INFO  com.browserstack.utils.Helpers - true
+21:22:03.486 [ApplicationImpl pooled thread 1425] INFO  c.b.l.BrowserStackRunExtension - maven
+21:22:03.487 [ApplicationImpl pooled thread 1425] INFO  com.browserstack.utils.Helpers - true
+21:24:43.895 [ApplicationImpl pooled thread 1432] INFO  c.b.l.BrowserStackRunExtension - maven
+21:24:43.896 [ApplicationImpl pooled thread 1432] INFO  com.browserstack.utils.Helpers - true
+21:26:40.789 [ApplicationImpl pooled thread 1436] INFO  c.b.l.BrowserStackRunExtension - maven
+21:26:40.789 [ApplicationImpl pooled thread 1436] INFO  com.browserstack.utils.Helpers - true
+21:27:48.143 [ApplicationImpl pooled thread 1435] INFO  c.b.l.BrowserStackRunExtension - maven
+21:27:48.144 [ApplicationImpl pooled thread 1435] INFO  com.browserstack.utils.Helpers - true
+21:28:06.298 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+21:28:06.305 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/venkatesh/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.0/browserstack-java-sdk-1.12.0.jar
+21:28:06.305 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+21:28:06.310 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+21:28:06.310 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/venkatesh/.m2/repository/com/browserstack/browserstack-java-sdk/1.12.0/browserstack-java-sdk-1.12.0.jar
+21:28:06.310 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true

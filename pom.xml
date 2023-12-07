@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.browserstack</groupId>
+    <artifactId>AFC-issue</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+        <cucumber.version>6.8.1</cucumber.version>
+        <selenium-java.version>3.141.59</selenium-java.version>
+        <surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
+        <browserstack-local-java.version>1.0.6</browserstack-local-java.version>
+        <test-name>End to End Scenario</test-name>
+        <slf4j.version>1.7.30</slf4j.version>
+        <logback.version>1.2.3</logback.version>
+        <json-simple.version>1.1.1</json-simple.version>
+        <aspectj.version>1.8.10</aspectj.version>
+    </properties>
+
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.10.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>6.10.4</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+
+
+        <!--        <dependency>-->
+        <!--            <groupId>io.cucumber</groupId>-->
+        <!--            <artifactId>cucumber-java8</artifactId>-->
+        <!--            <version>6.1.1</version>-->
+        <!--        </dependency>-->
+
+        <!--<dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+            <scope>test</scope>
+        </dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>6.10.4</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>6.10.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.26</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.21.0</version>
+        </dependency>
+
+
+
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.21.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.21.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.36</version>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.13.1</version>
+        </dependency>
+
+
+
+
+        <dependency>
+            <groupId>com.browserstack</groupId>
+            <artifactId>browserstack-java-sdk</artifactId>
+            <version>LATEST</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <!--<build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId><configuration><argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine></configuration>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.aspectj</groupId>
+                            <artifactId>aspectjweaver</artifactId>
+                            <version>${aspectj.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>2.13.8</reportVersion>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.3.0</version>
+            <executions>
+              <execution>
+                <id>getClasspathFilenames</id>
+                <goals>
+                  <goal>properties</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+    </build>-->
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <includes>
+                        <include>**/*CukesRunner.java</include>
+                    </includes><argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
+                    <parallel>methods</parallel>
+                    <!--                    <parallel>classes</parallel>-->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <!--                    <runOrder>alphabetical</runOrder>-->
+                    <parallel>methods</parallel>
+                    <threadCount>3</threadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <!--                    <forkCount>2C</forkCount>-->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>2.8.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <projectName>Automation Testing Result</projectName>
+                            <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>getClasspathFilenames</id>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>on-prem</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <systemProperties>
+                                <testFailureIgnore>false</testFailureIgnore>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>on-prem</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>single</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.filter.name</name>
+                                    <value>${test-name}</value>
+                                </property>
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>on-prem-suite</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <systemProperties>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>on-prem</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>single</value>
+                                </property>
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>docker</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <systemProperties>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>docker</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>single</value>
+                                </property>
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bstack-single</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.aspectj</groupId>
+                                <artifactId>aspectjweaver</artifactId>
+                                <version>${aspectj.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <configuration>
+                            <parallel>methods</parallel>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <parallel>methods</parallel>
+                            <threadCount>5</threadCount>
+                            <perCoreThreadCount>false</perCoreThreadCount>
+                            <systemProperties>
+                                <testFailureIgnore>false</testFailureIgnore>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <!--<property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>-->
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>single</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>remote</value>
+                                </property>
+                                <!--<property>
+                                    <name>cucumber.filter.name</name>
+                                    <value>${test-name}</value>
+                                </property>-->
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>**/RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bstack-local</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <systemProperties>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>local</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>remote</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.filter.name</name>
+                                    <value>${test-name}</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bstack-parallel</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <parallel>methods</parallel>
+                            <useUnlimitedThreads>false</useUnlimitedThreads>
+                            <threadCount>5</threadCount>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <systemProperties>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>single</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>remote</value>
+                                </property>
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bstack-local-parallel</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
+                        <configuration>
+                            <parallel>methods</parallel>
+                            <useUnlimitedThreads>false</useUnlimitedThreads>
+                            <threadCount>5</threadCount>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <systemProperties>
+                                <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"
+-Dfile.encoding=UTF-8
+                                    -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"</argLine>
+                                <property>
+                                    <name>cucumber.publish.quiet</name>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>html:target/cucumber-html-reports.html,io.qameta.allure.cucumber6jvm.AllureCucumber6Jvm</value>
+                                </property>
+                                <property>
+                                    <name>caps-type</name>
+                                    <value>local</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>remote</value>
+                                </property>
+                                <property>
+                                    <name>allure.results.directory</name>
+                                    <value>${project.build.directory}/allure-results</value>
+                                </property>
+                            </systemProperties>
+                            <includes>
+                                <include>browserstack.RunCucumberTests.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bstack-parallel-browsers</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <configuration>
+                            <classpathScope>test</classpathScope>
+                            <mainClass>browserstack.ParallelTest</mainClass>
+                            <cleanupDaemonThreads>false</cleanupDaemonThreads>
+                            <systemProperties>
+                                <property>
+                                    <key>cucumber.publish.quiet</key>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <key>cucumber.plugin</key>
+                                    <value>html:target/cucumber-html-reports.html</value>
+                                </property>
+                                <property>
+                                    <key>caps-type</key>
+                                    <value>parallel</value>
+                                </property>
+                                <property>
+                                    <key>parallel-count</key>
+                                    <value>10</value>
+                                </property>
+                                <property>
+                                    <key>env</key>
+                                    <value>remote</value>
+                                </property>
+                            </systemProperties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>
